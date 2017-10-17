@@ -15,8 +15,8 @@ knife[:editor]   = "vi"
 knife[:ssh_user] = 'ubuntu'
 # The data required by knife to authenticate with AWS console/account
 #knife[:aws_credential_file] = '/root/chef-repo/.chef/credentials/aws_credential_file'
-knife[:aws_access_key_id]     = 'AKIAIYYLWHI5T3KJFPAQ'
-knife[:aws_secret_access_key] = '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'
+knife[:aws_access_key_id]     = 'AKIAJEDDKWYENOGO4Q7Q'
+knife[:aws_secret_access_key] = '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'
 knife[:identity_file]         = '/root/chef-repo/.chef/clientmachines.pem'
 knife[:ssh_key_name]          = 'clientmachines'
 knife[:region]                = 'ap-south-1'

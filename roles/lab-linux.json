@@ -9,7 +9,7 @@
     },
     "run_list": [
         "recipe[lab-linux::apache]",
-        "recipe[jenkins]",
+        "recipe[jenkins::master]",
         "recipe[chef-client]"
     ]
 }
