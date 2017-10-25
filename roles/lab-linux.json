@@ -6,10 +6,20 @@
     "default_attributes": {
     },
     "override_attributes": {
-    },
+    "jenkins": {
+      "master": {
+        "install_method": "war",
+        "channel": "stable-2.46",
+        "version": "2.46",
+        "jvm_options": "-Djenkins.install.runSetupWizard=false",
+        "runit": {
+          "sv_timeout": 360
+        }
+      }
+    }    },
     "run_list": [
         "recipe[lab-linux::apache]",
         "recipe[java]",
-        "recipe[chef-client]"
+        "recipe[jenkins::master]"
     ]
 }
